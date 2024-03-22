@@ -43,19 +43,19 @@ final GoRouter router = GoRouter(
                   path: 'albumdetails/:albumId',
                   builder: (context, state) {
                     final albumId = state.pathParameters['albumId'] ?? '';
-                    final albumTitle = state.pathParameters['albumTitle'] ?? '';
-                    final artistName = state.pathParameters['artistName'] ?? '';
-                    final imageUrl = state.pathParameters['imageUrl'] ?? '';
-                    final releaseDate =
-                        state.pathParameters['releaseDate'] ?? '';
-                    final totalTracks = 0;
+                    // final albumTitle = state.pathParameters['albumTitle'] ?? '';
+                    // final artistName = state.pathParameters['artistName'] ?? '';
+                    // final imageUrl = state.pathParameters['imageUrl'] ?? '';
+                    // final releaseDate =
+                    //     state.pathParameters['releaseDate'] ?? '';
+                    // final totalTracks = 0;
                     return AlbumDetailScreen(
                       albumId: albumId,
-                      albumTitle: albumTitle,
-                      artistName: artistName,
-                      imageUrl: imageUrl,
-                      releaseDate: releaseDate,
-                      totalTracks: totalTracks,
+                      // albumTitle: albumTitle,
+                      // artistName: artistName,
+                      // imageUrl: imageUrl,
+                      // releaseDate: releaseDate,
+                      // totalTracks: totalTracks,
                     );
                   },
                 ),

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:projet_spotify_gorouter/models/album.dart';
 
 const token =
-    "BQAkCMueicHay3avbTPx_yjO41qWFRuOt-AslS5r7UlgpWqwC5-3BLvzJuSv7_Nnas9id5W2aMgLZPhBOB3qKOYKaUCh50dtupeKZ3aFZjPPuKo0Q2s";
+    "BQDzRVUdYVu8YfA61oPnL2lKaZNKzdHSTWqCOcDYy4F113EWbuTac5sGdWecs0xBOrQS9sqosimvpfK49_ykL2GWKfJu1ghgnAUcHB8lZqATQiM1YD4";
 
 Future<List<Album>> fetchLatestAlbums() async {
   final response = await http.get(
@@ -59,7 +59,7 @@ Future<List<Album>> fetchLatestAlbums() async {
 // }
 Future<Album> fetchAlbumDetail(String albumId) async {
   final response = await http.get(
-    Uri.parse('https://api.spotify.com/v1/albums/0rlip3cEYFXL5BMUMTwb3N'),
+    Uri.parse('https://api.spotify.com/v1/albums/$albumId'),
     headers: {'Authorization': 'Bearer $token'},
   );
 

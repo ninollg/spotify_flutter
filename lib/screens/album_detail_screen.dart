@@ -4,19 +4,19 @@ import 'package:projet_spotify_gorouter/provider/provider_spotify.dart';
 
 class AlbumDetailScreen extends StatelessWidget {
   final String albumId; 
-  final String albumTitle;
-  final String artistName;
-  final String imageUrl;
-  final String releaseDate;
-  final int totalTracks;
+  // final String albumTitle;
+  // final String artistName;
+  // final String imageUrl;
+  // final String releaseDate;
+  // final int totalTracks;
 
   const AlbumDetailScreen({
     required this.albumId, 
-    required this.albumTitle,
-    required this.artistName,
-    required this.imageUrl,
-    required this.releaseDate,
-    required this.totalTracks,
+    // required this.albumTitle,
+    // required this.artistName,
+    // required this.imageUrl,
+    // required this.releaseDate,
+    // required this.totalTracks,
   });
 
   @override
